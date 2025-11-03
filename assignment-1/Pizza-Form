@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <Title>Pizza Form</Title>
+        <link rel="icon" href="Thiswouldbeapng" />
+        <meta name="Author" content="Max" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Start</h1>
+                <form>
+                    <label for=amount" name="number-of-pizzas">Number of Pizzas</label>
+                    <input type="number" id="amount" value="1" min="1" max="10" />
+                </form>
+            </header>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
