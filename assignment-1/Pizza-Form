@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <Title>Pizza Form</Title>
@@ -11,8 +11,73 @@
             <header>
                 <h1>Start</h1>
                 <form>
-                    <label for=amount" name="number-of-pizzas">Number of Pizzas</label>
-                    <input type="number" id="amount" value="1" min="1" max="10" />
+                    <fieldset>
+                        <legend>Amount of Pizzas</legend>
+                            <label for="amount" name="number-of-pizzas">Number of Pizzas</label>
+                            <input type="number" id="amount" value="1" min="1" max="10" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Size (Number of Slices)</legend>
+                        <label for="small">Small-6 slices</label>
+                        <input type="radio" id="small" name="size" value="small">
+                        <label for="medium">Medium-8 slices</label>
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="large">Large-10 slices</label>
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="x-large">Extra Large-12 slices</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Shape</legend>
+                        <label for="round">Round</label>
+                        <input type="radio" id="rounded" name="shape" value="round-pizza"><br>
+                        <label for="square">Square</label>
+                        <input type="radio" id="squared" name="shape" value="squared-pizza">
+                    </fieldset>
+                    <fieldset>
+                        <legend></strong>Create Your Pizza</legend>
+                        <p><strong>Sauce</strong></p>
+                        <label for="marinara">Marinara</label>
+                        <input type="radio" id="marinara" name="sauce" value="marinara-pizza"><br>
+                        <label for="barbecue">Barbecue</label>
+                        <input type="radio" id="barbecue" name="sauce" value="barbecue-pizza"><br>
+                        <label for="alfredo">Alfredo</label>
+                        <input type="radio" id="alfredo" name="sauce" value="alfredo-pizza"><br>
+                        <label for="ranch">Ranch</label>
+                        <input type="radio" id="ranch" name="sauce" value="ranch-pizza">
+                        <p><strong>Toppings</strong></p>
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni-pizza"><br>
+                        <label for="sausage">Sausage</label>
+                        <input type="checkbox" id="sausage" name="toppings" value="sausage-pizza"><br>
+                        <label for="mushroom">Mushroom</label>
+                        <input type="checkbox" id="mushroom" name="toppings" value="mushroom-pizza"><br>
+                        <label for="ham">Ham</label>
+                        <input type="checkbox" id="ham" name="toppings" value="ham-pizza"><br>
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" id="pineapple" name="toppings" value="pineapple-pizza"><br>
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" id="tomato" name="toppings" value="tomato-pizza"><br>
+                        <label for="pepper">Pepper</label>
+                        <input type="checkbox" id="pepper" name="toppings" value="pepper-pizza">
+                        <p><strong>Crust Type</strong></p>
+                        <label for="crust"><span>Crust</span></label>
+                        <select id="crust" name="crust-type">
+                            <option value="deep-dish">Deep Dish</option>
+                            <option value="thin-crust">Thin Crust</option>
+                            <option value="stuffed-crust">Stuffed Crust</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Retrieve Your Pizza</legend>
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" id="delivery" name="retrieve" value="delivery-pizza"><br>
+                        <label for="carry-out">Carry Out</label>
+                        <input type="radio" id="carry-out" name="retrive" value="carry-out-pizza"><br>
+                        <label for="extra-directions">If delivery, write any extra instructions below.</label>
+                        <textarea id="extra-directions" name=retrieve-info></textarea>
+                    </fieldset>
+                    <button type="submit">Complete Order</button>
+                    <button type="reset">Reset Order</button>
                 </form>
             </header>
         </main>
