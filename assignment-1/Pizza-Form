@@ -21,12 +21,12 @@
                     <fieldset>
                         <legend>Amount of Pizzas</legend>
                             <label for="amount" name="number-of-pizzas">Number of Pizzas</label>
-                            <input type="number" id="amount" value="1" min="1" max="10" />
+                            <input type="number" id="amount" name="amount-pizza" value="1" min="1" max="10" required />
                     </fieldset>
                     <fieldset>
                         <legend>Size (Number of Slices)</legend>
                         <label for="small">Small-6 slices</label>
-                        <input type="radio" id="small" name="size" value="small-pizza" /><br />
+                        <input type="radio" id="small" name="size" value="small-pizza" required /><br />
                         <label for="medium">Medium-8 slices</label>
                         <input type="radio" id="medium" name="size" value="medium-pizza" /><br />
                         <label for="large">Large-10 slices</label>
@@ -37,7 +37,7 @@
                     <fieldset>
                         <legend>Shape</legend>
                         <label for="round">Round</label>
-                        <input type="radio" id="rounded" name="shape" value="round-pizza" /><br />
+                        <input type="radio" id="rounded" name="shape" value="round-pizza" required /><br />
                         <label for="square">Square</label>
                         <input type="radio" id="squared" name="shape" value="squared-pizza" />
                     </fieldset>
@@ -45,7 +45,7 @@
                         <legend></strong>Create Your Pizza</legend>
                         <p><strong>Sauce</strong></p>
                         <label for="marinara">Marinara</label>
-                        <input type="radio" id="marinara" name="sauce" value="marinara-pizza"><br />
+                        <input type="radio" id="marinara" name="sauce" value="marinara-pizza" required /><br />
                         <label for="barbecue">Barbecue</label>
                         <input type="radio" id="barbecue" name="sauce" value="barbecue-pizza" /><br />
                         <label for="alfredo">Alfredo</label>
@@ -69,7 +69,7 @@
                         <input type="checkbox" id="pepper" name="toppings" value="pepper-pizza" />
                         <p><strong>Crust Type</strong></p>
                         <label for="crust"><span>Crust</span></label>
-                        <select id="crust" name="crust-type">
+                        <select id="crust" name="crust-type" required>
                             <option value="deep-dish">Deep Dish</option>
                             <option value="thin-crust">Thin Crust</option>
                             <option value="stuffed-crust">Stuffed Crust</option>
@@ -78,11 +78,11 @@
                     <fieldset>
                         <legend>Retrieve Your Pizza</legend>
                         <label for="delivery">Delivery</label>
-                        <input type="radio" id="delivery" name="retrieve" value="delivery-pizza" /><br />
+                        <input type="radio" id="delivery" name="retrieve" value="delivery-pizza" required /><br />
                         <label for="carry-out">Carry Out</label>
                         <input type="radio" id="carry-out" name="retrieve" value="carry-out-pizza" /><br />
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(000)000-0000" /> <br />
+                        <input type="tel" id="phone" name="phone" placeholder="(000)000-0000" required/> <br />
                         <p><strong>Address if Delivery</strong></p>
                         <label for="address-line-one">Address line one</label>
                         <input type="address" id="address-line-one" name="address-line-one-pizza" required/><br />
