@@ -14,7 +14,9 @@
                     <fieldset>
                         <legend>Name for Order</legend>
                         <label for="fname">First name</label>
-                        <input type="text" id="fname" />
+                        <input type="text" name="fname" id="fname"  required /><br />
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" required />
                     </fieldset>
                     <fieldset>
                         <legend>Amount of Pizzas</legend>
@@ -78,7 +80,40 @@
                         <label for="delivery">Delivery</label>
                         <input type="radio" id="delivery" name="retrieve" value="delivery-pizza" /><br />
                         <label for="carry-out">Carry Out</label>
-                        <input type="radio" id="carry-out" name="retrive" value="carry-out-pizza" /><br />
+                        <input type="radio" id="carry-out" name="retrieve" value="carry-out-pizza" /><br />
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(000)000-0000" /> <br />
+                        <p><strong>Address if Delivery</strong></p>
+                        <label for="address-line-one">Address line one</label>
+                        <input type="address" id="address-line-one" name="address-line-one-pizza" required/><br />
+                        <label for="address-line-two">Address line two</label>
+                        <input type="address" id="address-line-two" name="address-line-two-pizza" /> <br />
+                        <label for="city">City</label>
+                        <input type="address" id="city" name="city-pizza" /><br />
+                        <label for="province"><span>Province</span></label>
+                        <select name="province" id="province">
+                            <optgroup label="Province">
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NF">Newfoundland</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="PQ">Québec</option>
+                                <option value="SK">Saskatchewan</option>
+                            </optgroup>
+                            <optgroup>
+                                <optgroup label="Territories">
+                                    <option value="NT">Northwest territories</option>
+                                    <option value="NV">Nunavut</option>
+                                    <option value="YK">Yukon</option>
+                            </optgroup>
+                        </select>
+                        <br />
+                        <label for="zip-code">Zip/Postal Code</label>
+                        <input type="text" id="zip-code" name="postal-code-pizza" placeholder="Ex- L4N 4Y6" /> <br />
                         <label for="extra-directions">If delivery, write any extra instructions below.</label>
                         <textarea id="extra-directions" name=retrieve-info></textarea>
                     </fieldset>
