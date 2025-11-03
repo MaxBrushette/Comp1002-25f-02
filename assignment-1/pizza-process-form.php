@@ -21,15 +21,15 @@
 
             $selectedSauce = $_POST['sauce'];
 
-            if (isset($_POST['toppings'])){
-                $selectedToppings = $_POST['toppings'];
+            if (isset($_POST['topping'])){
+                $selectedToppings = $_POST['topping'];
 
                 echo('<p>Your selected toppings are: <ul>');
-                foreach($selectedToppings as $toppings){
-                    echo('<li>'.$toppings.'</li>');
+                foreach($selectedToppings as $topping){
+                    echo('<li>'.$topping.'</li>');
                 }
 
-                echo('</ul');
+                echo('</ul>');
             }else{
                 echo('<p>No toppings set.</p>');
             }
@@ -39,9 +39,9 @@
             $selectedRetrievalMethod = $_POST['retrieve'];
 
             if ($selectedRetrievalMethod == "delivery-pizza" ){
-                echo('<p>You have selected delivery.</p>')
+                echo('<p>You have selected delivery.</p>');
             }elseif($selectedRetrievalMethod == "carry-out-pizza"){
-                echo('<p>You have selected carry-out.')
+                echo('<p>You have selected carry-out.</p>');
             }
 
             $phone = $_POST['phone'];
@@ -64,7 +64,7 @@
             if(isset($_POST['retrieve-info'])){
                 $retrieveInfo = $_POST['retrieve-info'];
             }
-            echo('<p>Thank you for your order,' .$fname.' '.$lname.'!</p>');
+            echo('<p>Thank you for your order, ' .$fname.' '.$lname.'!</p>');
             ?>
         </main>
     </body>
