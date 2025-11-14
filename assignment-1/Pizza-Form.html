@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <Title>Pizza Form</Title>
+        <meta name="Author" content="Max" />
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Order your pizza!</h1>
+                <img src="pizzaphoto.jpg" alt="a pepperoni pizza still in the box." height="150" width="226" />
+                <form id="pizza-creation" action="pizza-process-form.php" method="post">
+                    <input type="hidden" name="form-sent" value="1" />
+                    <fieldset>
+                        <legend>Name for Order</legend>
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname"  required /><br />
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Amount of Pizzas</legend>
+                            <label for="amount" name="number-of-pizzas">Number of Pizzas</label>
+                            <input type="number" id="amount" name="amount-pizza" value="1" min="1" max="10" required />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Size (Number of Slices)</legend>
+                        <label for="small">Small-6 slices</label>
+                        <input type="radio" id="small" name="size" value="small-pizza" required /><br />
+                        <label for="medium">Medium-8 slices</label>
+                        <input type="radio" id="medium" name="size" value="medium-pizza" /><br />
+                        <label for="large">Large-10 slices</label>
+                        <input type="radio" id="large" name="size" value="large-pizza" /><br />
+                        <label for="x-large">Extra Large-12 slices</label><br>
+                        <input type="radio" id="x-large" name="size" value="x-large-pizza" />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Shape</legend>
+                        <label for="round">Round</label>
+                        <input type="radio" id="rounded" name="shape" value="round-pizza" required /><br />
+                        <label for="square">Square</label>
+                        <input type="radio" id="squared" name="shape" value="squared-pizza" />
+                    </fieldset>
+                    <fieldset>
+                        <legend></strong>Create Your Pizza</legend>
+                        <p><strong>Sauce</strong></p>
+                        <label for="marinara">Marinara</label>
+                        <input type="radio" id="marinara" name="sauce" value="marinara-pizza" required /><br />
+                        <label for="barbecue">Barbecue</label>
+                        <input type="radio" id="barbecue" name="sauce" value="barbecue-pizza" /><br />
+                        <label for="alfredo">Alfredo</label>
+                        <input type="radio" id="alfredo" name="sauce" value="alfredo-pizza" /><br />
+                        <label for="ranch">Ranch</label>
+                        <input type="radio" id="ranch" name="sauce" value="ranch-pizza" />
+                        <p><strong>Toppings</strong></p>
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" id="pepperoni" name="topping[]" value="pepperonis" /><br />
+                        <label for="sausage">Sausage</label>
+                        <input type="checkbox" id="sausage" name="topping[]" value="sausages" /><br />
+                        <label for="mushroom">Mushroom</label>
+                        <input type="checkbox" id="mushroom" name="topping[]" value="mushrooms" /><br />
+                        <label for="ham">Ham</label>
+                        <input type="checkbox" id="ham" name="topping[]" value="ham" /><br />
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" id="pineapple" name="topping[]" value="pineapples"/><br />
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" id="tomato" name="topping[]" value="tomatoes" /><br />
+                        <label for="pepper">Pepper</label>
+                        <input type="checkbox" id="pepper" name="topping[]" value="peppers" />
+                        <p><strong>Crust Type</strong></p>
+                        <label for="crust"><span>Crust</span></label>
+                        <select id="crust" name="crust-type" required>
+                            <option value="deep-dish">Deep Dish</option>
+                            <option value="thin-crust">Thin Crust</option>
+                            <option value="stuffed-crust">Stuffed Crust</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Retrieve Your Pizza</legend>
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" id="delivery" name="retrieve" value="delivery-pizza" required /><br />
+                        <label for="carry-out">Carry Out</label>
+                        <input type="radio" id="carry-out" name="retrieve" value="carry-out-pizza" /><br />
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(000)000-0000" required/> <br />
+                        <p><strong>Address if Delivery</strong></p>
+                        <label for="address-line-one">Address line one</label>
+                        <input type="address" id="address-line-one" name="address-line-one-pizza"/><br />
+                        <label for="address-line-two">Address line two</label>
+                        <input type="address" id="address-line-two" name="address-line-two-pizza" /> <br />
+                        <label for="city">City</label>
+                        <input type="address" id="city" name="city-pizza" /><br />
+                        <label for="province"><span>Province</span></label>
+                        <select name="province" id="province">
+                            <optgroup label="Province">
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NF">Newfoundland</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="PQ">Québec</option>
+                                <option value="SK">Saskatchewan</option>
+                            </optgroup>
+                            <optgroup>
+                                <optgroup label="Territories">
+                                    <option value="NT">Northwest territories</option>
+                                    <option value="NV">Nunavut</option>
+                                    <option value="YK">Yukon</option>
+                            </optgroup>
+                        </select>
+                        <br />
+                        <label for="zip-code">Zip/Postal Code</label>
+                        <input type="text" id="zip-code" name="postal-code-pizza" placeholder="Ex- L4N 4Y6" /> <br />
+                        <label for="extra-directions">If delivery, write any extra instructions below.</label>
+                        <textarea id="extra-directions" name=retrieve-info></textarea>
+                    </fieldset>
+                    <button type="submit">Complete Order</button>
+                    <button type="reset">Reset Order</button>
+                </form>
+            </header>
+        </main>
+        <footer>
+            <p><small><a href="https://unsplash.com/photos/pepperoni-pizza-SU1LFoeEUkk" target="_black">Pizza Image</a></small></p>
+        </footer>
+    </body>
+</html>
