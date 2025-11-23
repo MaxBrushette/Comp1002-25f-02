@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+html {
+   background-image: url("../images/Moviebg.jpg");
+   background-size: cover;
+}
+
+section#q1 h1{
+   color:#ffffff;
+   font-family:"Barlow Condensed";
+   position:relative;
+   left:20px;
+}
+section#q1 p1{
+   color:white;
+}
+section#q1 p2{
+
+}
+section#q2 h1{
+
+}
+main h1{
+   position:relative;
+   font-family:"Potta One";
+   color:white;
+   font-size:300px;
+   left:250px
+}
+main p{
+   position:relative;
+   text-transform:uppercase;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color:white;
+   font-size:30px;
+   left:400px;
+   bottom:230px;
+}
+.potta-one-regular {
+  font-family: "Potta One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
