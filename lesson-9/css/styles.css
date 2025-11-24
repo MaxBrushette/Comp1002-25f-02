@@ -1,16 +1,20 @@
 /* External CSS to control styling of text */
 
 /* STEP 2a: Add a base font to the HTML element using a font category (serif, sans-serif, monospace, cursive, or fantasy) */
-
+/* been there did that*/
+/* css comment looks like that. */
 /* STEP 2b: Comment out the above declaration, and add below it a font-family value that consists of a list of web-safe fonts (a font stack) */
-
+html{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* STEP 13: Construct a declaration for the page text using the shorthand font syntax (font-style, font-variant, font-weight, font-stretch, font-size/line-height, and font-family.) */
 html {
 
 }
 /* STEP 3: Add a base color to the HTML element */
 html {
-	background-color: white;
+	background-color: rgb(160, 150, 124);
+	color:rgb(54, 33, 22);
 
 }
 /* STEP 4a: Try a variety of absolute CSS length/size units (mm, cm, in, pt, pc) to set the font-size on the HTML element */
@@ -21,9 +25,15 @@ html {
 
 /* STEP 4c: Set the root element (HTML) to 10px, then set the H1 and the H2 elements using rem - this is a common practice for controlling font sizing across a page */
 html {
-
+/*font-size: 1in;*/
+	font-size: 20px;
 }
-
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 1.8rem;
+}
 /* STEP 8: Apply font-variant to h1 or h2 (small-caps) */
 
 /* STEP 9: Apply underline, overline and strikethrough to the h1 */
@@ -44,7 +54,9 @@ h2 {
 
 }
 /* STEP 5: Line height for paragraphs (leading) - set line-height on the MAIN P elements - this can be a unitless setting (a factor) */
-
+main p{
+	line-height: 1.5;
+}
 /* STEP 11: Change the indenting of the paragraphs */
 main p {
 
