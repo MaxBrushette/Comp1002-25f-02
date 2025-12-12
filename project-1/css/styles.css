@@ -16,6 +16,9 @@ header nav li{
     background-color: rgb(78, 78, 168);
     border:2px solid rgb(255, 81, 0);
 }
+a{
+    text-decoration:none;
+}
 header nav a:link{
     color:white;
 }
