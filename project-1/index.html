@@ -39,12 +39,12 @@
                 <!-- Form for sending a review. -->
                  <!-- IDs are for CSS to make it easier since the page automatically defaults to centered, and that looks kinda ugly. -->
                 <form id="review" action="review-process-form.php" method="post">
-                    <input type="hidden" name="form-sent" value="1" />
+                    <input type="hidden" name="form-sent" value="1" /> <!--Confirms form was submitted. -->
                     <fieldset>
                         <legend>Write Your Own Review!</legend>
                         <label for="fname">First Name</label>
                         <input type="text" name="fname" id="fname" required />
-                        <br />
+                        <br /> <!--These breaks are so the form looks nicer. It all together is kind of ugly. Not sure if I need to do it this way of if it's easier in css.-->
                         <label for="lname">Last Name</label>
                         <input type="text" name="lname" id="lname" required />
                         <p id="FormP">Stars</p>
