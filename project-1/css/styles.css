@@ -6,27 +6,28 @@ fieldset{
     text-align:left;
 }
 body{
-    text-align:center;
+    text-align:center; /* Page looks nicer centered for this project, I think. */
 }
 header nav ul{
+    /*below is to get rid of any padding or margins. */
     padding-left:0;
     margin-top:0;
-    list-style-type:none;
+    list-style-type:none; /* gets rid of the dots and whatnot. */
 }
 header nav li{
-    display:inline-flex;
-    justify-content:space-between;
+    display:inline-flex; /*So that they're next to each other nicely. */
+    justify-content:space-between; /* So there's a little space between each one/ */
     background-color: rgb(78, 78, 168);
     border:2px solid rgb(255, 81, 0);
 }
 a{
-    text-decoration:none;
+    text-decoration:none; /* gets rid of that ugly underline for the navigation. */
 }
 header nav a:link{
     color:white;
 }
 header nav a:visited{
-    color: rgb(255, 207, 119);
+    color: rgb(255, 207, 119); /*So it's not purple so it doesn't blend in. */
 }
 header nav a:hover{
     color: azure;
@@ -34,9 +35,11 @@ header nav a:hover{
 header nav a:active{
     color: orange;
 }
+/*I think the black border around the images makes it look a bit nicer */
 main section article img{
     border: 2px solid black;
 }
+/*To center it better. I didn't want it too long on screens. */
 main section article p{
     margin-left:10rem;
     margin-right:10rem;
@@ -45,14 +48,14 @@ main section article p{
     position:relative;
     display:inline-block;
 }
-main section article img.tree{
+main section article img.tree{ /*tree class so that the text can go on top of the tree and not mess with stuff. */
     border: none;
     display:block;
     position:relative;
     text-align:center;
 }
 #LPercent{
-    position:absolute;
+    position:absolute; /*So it stays where it's supposed to be. */
     transform:translateX(-50%); /* was depserately tring to figure out how to make it so it doesn't move if the screen gets bigger. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translate */
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size:4rem;
@@ -72,6 +75,7 @@ main section article img.tree{
     margin-left:10rem;
     margin-right:10rem;
 }
+/*So that the p doesn't have a huge margin, making it look awkward. */
 #FormP, #FormP2, #FormP3{
     margin:0;
 }
@@ -82,6 +86,7 @@ textarea{
     max-height: 130px;
     max-width: 460px;
 }
+/* If the screen is small, the images aren't going off screen with this. */
 @media (width <= 700px){
     img{
         height:auto;
