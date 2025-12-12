@@ -6,11 +6,13 @@
         <meta name="author" content="Max Brushette" />
         <meta name="description" content="The main page for Sony Walkman promotion." />
         <link rel="shortcut icon" href="images/MusicIcon.png" type="image/x-icon" />
+        <!--https://creazilla.com/media/icon/3215169/music-notes-simple Icon by Phosphor Icons on Creazilla.-->
         <link rel="stylesheet" href="css/styles.css" />
         <script src="js/javascript.js" defer></script>
     </head>
     <body>
         <header>
+            <!--Navigation to each of the html files. This is across each one so it's universal.-->
             <nav>
                 <ul>
                     <li><a href="index.html" title="The Home page">Home</a></li>
@@ -26,6 +28,7 @@
                 <article>
                     <figure>
                         <img src="images/Walkman.jpg" height="300" alt="Sony Walkman" />
+                        <!--https://commons.wikimedia.org/wiki/File:Original_Sony_Walkman_TPS-L2.JPG Original Sony Walkman Binarysequence on Wikimedia Commons.-->
                     </figure>
                     <h2>Music on the Move</h2>
                     <p>What's so amazing about the Sony Walkman? Click "Promo Details" or "About the Sony Walkman" for more information!</p>
@@ -33,6 +36,8 @@
             </section>
             <section>
                 <h2>Your Music, Your Thoughts</h2>
+                <!-- Form for sending a review. -->
+                 <!-- IDs are for CSS to make it easier since the page automatically defaults to centered, and that looks kinda ugly. -->
                 <form id="review" action="review-process-form.php" method="post">
                     <input type="hidden" name="form-sent" value="1" />
                     <fieldset>
@@ -44,6 +49,7 @@
                         <input type="text" name="lname" id="lname" required />
                         <p id="FormP">Stars</p>
                         <select id="stars" name="stars-amount" required>
+                            <!--HTML didn't like when it's required and the first selection /wasnt/ disabled. -->
                             <option value="" label="numberselection" disabled selected></option>
                             <option value="1">1</option>
                             <option value="2">2</option>
