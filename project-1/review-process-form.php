@@ -12,9 +12,7 @@
                 $lname = $_POST["lname"];
                 $stars = $_POST['stars-amount'];
                 $reviewtext = $_POST['review-text'];
-
-                echo('<p>Thanks, ' ' .$fname. ' ' .$lname.' '</p>');
-            ?>
+                ?>
         </main>
     </body>
 </html>
