@@ -85,10 +85,17 @@ textarea{
 @media (width <= 700px){
     img{
         height:auto;
+        max-height:400px;
         max-width: 400px;
     }
     textarea{
         max-height:130px;
         max-width:165px;
+    }
+    #LPercent{
+        top:200px;
+    }
+    #Percent{
+        top:199px;
     }
 }
