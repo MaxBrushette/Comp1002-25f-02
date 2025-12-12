@@ -72,7 +72,7 @@ main section article img.tree{
     margin-left:10rem;
     margin-right:10rem;
 }
-#FormP{
+#FormP, #FormP2{
     margin:0;
 }
 textarea:invalid{
