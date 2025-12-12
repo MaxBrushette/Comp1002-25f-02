@@ -2,6 +2,9 @@
 html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+fieldset{
+    text-align:left;
+}
 body{
     text-align:center;
 }
@@ -64,4 +67,18 @@ main section article img.tree{
     font-size:3.9rem;
     color:orange;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#review{
+    margin-left:10rem;
+    margin-right:10rem;
+}
+#FormP{
+    margin:0;
+}
+textarea:invalid{
+    border:2px dashed red;
+}
+textarea{
+    max-height: 130px;
+    max-width: 460px;
 }
