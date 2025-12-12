@@ -2,7 +2,7 @@
 html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#Home{
+body{
     text-align:center;
 }
 header nav ul{
@@ -22,10 +22,43 @@ header nav a:link{
 header nav a:visited{
     color: rgb(255, 207, 119);
 }
+header nav a:hover{
+    color: azure;
+}
+header nav a:active{
+    color: orange;
+}
 main section article img{
     border: 2px solid black;
 }
 main section article p{
     margin-left:10rem;
     margin-right:10rem;
+}
+#TreeIMG{
+    position:relative;
+    display:inline-block;
+}
+main section article img.tree{
+    border: none;
+    display:block;
+    position:relative;
+    text-align:center;
+}
+#LPercent{
+    position:absolute;
+    transform:translateX(-50%); /* was depserately tring to figure out how to make it so it doesn't move if the screen gets bigger. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translate */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:4rem;
+    top:100px;
+    color:red;
+
+}
+#Percent{
+    position:absolute;
+    transform:translateX(-50%);
+    top:99px;
+    font-size:3.9rem;
+    color:orange;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
