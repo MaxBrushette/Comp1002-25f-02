@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Support</title>
+        <meta name="author" content="Max Brushette" />
+        <meta name="description" content="Support for the Sony Walkman" />
+        <link rel="shortcut icon" href="images/MusicIcon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="The Home page">Home</a></li>
+                    <li><a href="promo.html" title="Promotion Details">Promo Details</a></li>
+                    <li><a href="about.html" title="About the Product">About the Sony Walkman</a></li>
+                    <li><a href="support.html" title="Contact us!">Support</a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us!</h1>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <figure>
+                        <img src="images/CallCenter.jpg" height="400px" alt="Workers at a call center."/>
+                    </figure>
+                    <h2>Questions? Complete the Form Below!</h2>
+                    <form id="support" action="support-process.php" method="post">
+                        <input type="hidden" name="form-sent" value="1" />
+                        <fieldset>
+                            <legend>Support Form</legend>
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" required />
+                            <br />
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" required />
+                            <br />
+                            <label for="emailaddress">Email</label>
+                            <input type="email" name="emailaddress" id="emailaddress" required />
+                            <br />
+                            <p id="FormP">What are you contacting us for?</p>
+                            <label for="supporttext" name="support-text"></label>
+                            <textarea id="supporttext" name="support-text" required></textarea>
+                            <br />
+                            <button type="submit">Complete Form</button>
+                            <button type="reset">Reset Form</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
